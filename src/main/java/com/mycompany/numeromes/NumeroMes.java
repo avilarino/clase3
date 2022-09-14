@@ -12,6 +12,40 @@ public class NumeroMes {
 
     public static void main(String[] args) {
         
+        // ejercicios clase 
+        
+        double total;
+        double capital = Double.parseDouble(JOptionPane.showInputDialog(null, "ingrese el capital"));
+        
+        
+        if (capital > 10000){
+            total = capital + (capital * 10) / 100;
+            System.out.println("el total es " + total);
+        } else if (capital >= 10.000 && capital < 25.000){
+            total = capital + (capital * 7.5) / 100;
+            System.out.println("el total es " + total);
+        } else if (capital >= 25.000) {
+            total = capital + (capital * 5) / 100;
+            System.out.println("el total es " + total);
+        }
+        
+        
+        
+        
+        double monto = Double.parseDouble(JOptionPane.showInputDialog(null, "que monto es ?"));
+        String factura = JOptionPane.showInputDialog(null, "que factura va a hacer A, B, C");
+        
+        switch (factura){
+            case "A": System.out.println("factura" + factura + "valor iva" + (monto * 10.5) / 100);
+                      
+            case "B": System.out.println("factura" + factura + "valor iva" + (monto * 10.5) / 100);
+            break;
+            case "C": System.out.println("factura" + factura + "valor iva" + (monto * 10.5) / 100);
+            break;
+
+        }
+        
+        
         
         String meses = JOptionPane.showInputDialog("Decime el mes por favor !");
                 
